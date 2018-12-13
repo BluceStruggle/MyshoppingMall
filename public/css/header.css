@@ -1,0 +1,36 @@
+a{
+    color:#000;
+}
+/*a标签悬停红色*/
+a:hover{
+    color:#eb0033 !important;
+}
+/*设置网页头 电话 邮箱 地址 账户余额 我的账户 的背景颜色*/
+.my_hbg1{
+    background: #1E1F29;
+}
+/*设置logo  搜索框  我的收藏  我的购物车背景颜色*/
+ .my_hbg2{
+     background: #15161D;
+ }
+ /*设置logo  搜索框  我的收藏  我的购物车下边框样式*/
+ .my_hb_bottom{
+     border-bottom:3px solid #eb0033;
+ }
+ /*设置搜索框 下拉列表 搜索样式*/
+.my_l_search{
+    border-radius:40px 0px 0px 40px;
+}
+.my_r_search{
+    border-radius:0px 40px 40px 0px;
+}
+
+
+ /*设置导航下边框样式*/
+ .my_nav_bt{
+     border-bottom:2px solid rgba(149,151,153,0.5);
+ }
+/*设置折叠导航背景颜色*/
+ .my_navbar_bg{
+
+ }

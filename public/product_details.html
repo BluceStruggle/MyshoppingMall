@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product_details.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <title>Title</title>
+</head>
+<body>
+<!-- 引入头部 -->
+<header id="header">
+</header>
+    <div class="my_container">
+        <!-- 导航 主页/所有分类/配件/耳机(xxx条结果) -->
+        <ul class="breadcrumb pt-4 pb-4 my_bread_bd ">
+            <li class="breadcrumb-item"><a href="#" class="text-muted small">主页</a></li>
+            <li class="breadcrumb-item "><a href="#" class="text-muted small">所有分类</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-muted small">配件</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-dark small">耳机(233条结果)</a></li>
+        </ul>
+        <!--商品详情-->
+        <div class="row mt-5">
+            <!-- 左侧小预览图轮播 -->
+            <div class="col-xl-2">
+                    <ul class="list-unstyled  ">
+                        <!-- 上箭头 -->
+                        <li class=" move">
+                            <span class="up-click">︿</span>
+                        </li>
+                        <li class="details_img">
+                            <ul class="list-unstyled  details_list">
+                                <li class=" my_bd"><img src="img/product01.png" alt="" data-md="" data-lg=""  class="img-fluid smImg"></li>
+                                <li class=" my_bd "><img src="img/product03.png" alt="" class="img-fluid"></li>
+                                <li class=" my_bd"><img src="img/product06.png" alt="" class="img-fluid"></li>
+                                <li class=" my_bd"><img src="img/product06.png" alt="" class="img-fluid"></li>
+                                <li class=" my_bd "><img src="img/product03.png" alt="" class="img-fluid"></li>
+                            </ul>
+                        </li>
+                        <!-- 下箭头 -->
+                        <li class="move">
+                            <span class="down-click">﹀</span>
+                        </li>
+                    </ul>
+            </div>
+            <!-- 中间商品中图 -->
+            <div class="col-xl-6 md">
+                <img src="img/product01.png" alt="" class="img-fluid mdImg">
+                <!-- Mask 遮罩小方块-->
+                <div class="mask"></div>
+                <!-- superMask 覆盖中图区域透明保护层-->
+                <div class="superMask"></div>
+                <!-- 大图 -->
+                <div class="lgImg"></div>
+            </div>
+            <!-- 右侧商品详情 -->
+            <div class="col-xl-4 detailsInfo">
+                <ul class="list-unstyled">
+                    <li><h5>商品名</h5></li>
+                    <li><h6>副标题</h6></li>
+                    <li><h6>*****</h6><span>浏览数量</span></li>
+                    <li><h2 class="text-danger d-inline-block">$980.00</h2><s class="text-muted">$990.00</s></li>
+                    <li><h5>服务承诺</h5></li>
+                    <!-- 规格介绍 -->
+                    <!-- <li><a class="btn btn-sm btn-outline-primary active" href="product_details.html?lid=1">双核i5/8GB内存/128GB闪存</a></li> -->
+                    <!-- 尺寸 颜色 -->
+                    <li>
+                        <span>SIZE</span>
+                        <select class=" btn btn-light h-50 border-right-0 my_l_search mr-4">
+                        <option  >X</option>
+                        <option >L</option>
+                    </select>
+                        <span>COLOR</span>
+                        <select class=" btn btn-light h-50 border-right-0 my_l_search">
+                            <option  >Red</option>
+                            <option >Blue</option>
+                        </select>
+                    </li>
+                    <!-- 商品数量 加入购物车 -->
+                    <li class="input_num">
+                        数量<input type="text" class="my_input">
+                        <span class="my_btn up">+</span>
+                        <span class="my_btn down">-</span>
+                        <!-- 悬停加入购物车 -->
+                        <span class="addCart">
+                            <a href="#" class=" btn btn-danger text-white font-weight-bold">
+                                加入购物车
+                            </a>
+                        </span>
+                    </li>
+                    <!-- 加入收藏 加入对比 -->
+                    <li class="mt-2">
+                        <button class="btn btn-danger">
+                            <a href="#" class="text-white">喜欢</a>
+                        </button>
+                        <button class="btn btn-success ml-4">
+                            <a href="#" class="text-white">对比</a>
+                        </button>
+                    </li>
+                    <!-- 分类 -->
+                    <li class="mt-2">分类:</li>
+                    <!-- 分享链接 -->
+                    <li class="mt-2">分享:</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 商品描述 详情 评论 -->
+        <div class="row">
+            <div class="col-xl-5">
+                <hr></div>
+            <div class="col-xl-2">
+                <ul class="list-unstyled tab">
+                    <li class="tab1">描述</li>
+                    <li class="tab2">详情</li>
+                    <li class="tab3">评论</li>
+                </ul>
+            </div>
+            <div class="col-xl-5">
+                <hr>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-xl-12">
+                <div class="content">
+                    <div class="content1">描述内容</div>
+                    <div class="content2">详情内容</div>
+                    <div class="content3">评论内容</div>
+                </div>
+            </div>
+        </div>
+        <!-- 相关商品 -->
+        <h3 class="text-center mt-5 mb-4">相关商品</h3>
+        <div class="row mb-5 ">
+            <div class="col-xl-3 ">
+                <div class="my_pro_bd my_pro_hv product"><!-- product js事件标识类 -->
+                    <img src="img/product01.png" alt="" class="img-fluid ">
+                    <div>
+                        <ul class="list-unstyled text-center">
+                            <li class="small">分类</li>
+                            <li><a href="#" class="small text-dark font-weight-bold ">产品名</a></li>
+                            <li><b class="text-danger">$980.00</b><s class="text-muted ">$990.00</s></li>
+                            <li class="text-danger ">*****</li>
+                            <li>
+                                <a href="#" class="small text-dark">喜欢</a>
+                                <a href="#" class="small text-dark">对比</a>
+                                <a href="#" class="small text-dark">浏览</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 商品悬停样式 -->
+                    <!-- 悬停加入购物车 -->
+                    <div class="cartHide">
+                        <a href="#" class="d-none btn btn-danger text-white font-weight-bold">
+                            加入购物车
+                        </a>
+                    </div>
+                    <!-- 商品悬停样式结束 -->
+                </div>
+
+            </div>
+            <div class="col-xl-3 ">
+                <div class="my_pro_bd my_pro_hv product">
+                    <img src="img/product02.png" alt="" class="img-fluid ">
+                    <div><ul class="list-unstyled text-center">
+                        <li  class="small">分类</li>
+                        <li><a href="#" class="small text-dark font-weight-bold ">产品名</a></li>
+                        <li><b class="text-danger">$980.00</b><s class="text-muted ">$990.00</s></li>
+                        <li class="text-danger">*****</li>
+                        <li>
+                            <a href="#" class="small text-dark">喜欢</a>
+                            <a href="#" class="small text-dark">对比</a>
+                            <a href="#" class="small text-dark">浏览</a>
+                        </li>
+                    </ul></div>
+                    <!-- 商品悬停样式 -->
+                    <!-- 悬停加入购物车 -->
+                    <div class="cartHide">
+                        <a href="#" class="d-none btn btn-danger text-white font-weight-bold">
+                            加入购物车
+                        </a>
+                    </div>
+                    <!-- 商品悬停样式结束 -->
+                </div>
+            </div>
+            <div class="col-xl-3 ">
+                <div class="my_pro_bd my_pro_hv product">
+                    <img src="img/product03.png" alt="" class="img-fluid ">
+                    <div><ul class="list-unstyled text-center">
+                        <li class="small">分类</li>
+                        <li><a href="#" class="small text-dark font-weight-bold">产品名</a></li>
+                        <li><b class="text-danger small">$980.00</b><s class="text-muted small">$990.00</s></li>
+                        <li class="text-danger">*****</li>
+                        <li>
+                            <a href="#" class="small text-dark">喜欢</a>
+                            <a href="#" class="small text-dark">对比</a>
+                            <a href="#" class="small text-dark">浏览</a>
+                        </li>
+                    </ul></div>
+                    <!-- 商品悬停样式 -->
+                    <!-- 悬停加入购物车 -->
+                    <div class="cartHide">
+                        <a href="#" class="d-none btn btn-danger text-white font-weight-bold">
+                            加入购物车
+                        </a>
+                    </div>
+                    <!-- 商品悬停样式结束 -->
+                </div>
+            </div>
+            <div class="col-xl-3 ">
+                <div class="my_pro_bd my_pro_hv product">
+                    <img src="img/product03.png" alt="" class="img-fluid ">
+                    <div><ul class="list-unstyled text-center">
+                        <li class="small">分类</li>
+                        <li><a href="#" class="small text-dark font-weight-bold">产品名</a></li>
+                        <li><b class="text-danger small">$980.00</b><s class="text-muted small">$990.00</s></li>
+                        <li class="text-danger">*****</li>
+                        <li>
+                            <a href="#" class="small text-dark">喜欢</a>
+                            <a href="#" class="small text-dark">对比</a>
+                            <a href="#" class="small text-dark">浏览</a>
+                        </li>
+                    </ul></div>
+                    <!-- 商品悬停样式 -->
+                    <!-- 悬停加入购物车 -->
+                    <div class="cartHide">
+                        <a href="#" class="d-none btn btn-danger text-white font-weight-bold">
+                            加入购物车
+                        </a>
+                    </div>
+                    <!-- 商品悬停样式结束 -->
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+    <iframe src="footer.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/details.js"></script>
+</body>
+</html>

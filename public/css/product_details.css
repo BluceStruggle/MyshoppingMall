@@ -1,0 +1,185 @@
+/*设置详情页预览图边框*/
+.my_bd{
+    border:1px solid #d0d3d6;
+}
+li.details_img{/*盛放商品小图区域*/
+    position: relative;
+    width:200px;
+    height:600px;
+    overflow: hidden;
+}
+ul.details_list{/*图片列表*/
+    position: absolute;
+    z-index: 1;
+    transition: all .5s linear;/*商品详情小图片列表区域 图片移动 位移样式*/
+}
+ul.details_list li:hover{
+    border:1px solid #ff1a45;
+}
+/*去除 除了最后一个li外 其余的下边框*/
+/*ul.details_list li:not(:last-child){
+    border-bottom:none;
+}*/
+/*设置上下箭头堆叠顺序*/
+li.move{
+    position: relative;
+    z-index: 2;
+}
+
+/*设置上下箭头*/
+span.up-click{
+    text-align: center;
+    border: 1px solid #d0d3d6;
+    background:white;
+    width:2rem;
+    height:2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    transform:translate(50%,50%);
+    top:-30px;
+    left:65px;
+}
+span.down-click{
+    text-align: center;
+    border: 1px solid #d0d3d6;
+    background:white;
+    width:2rem;
+    height:2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    transform:translate(50%,50%);
+    top:-30px;
+    left:65px;
+}
+span.up-click:hover,span.down-click:hover{
+    background:#ff1a45;
+    color:#fff;
+    cursor: pointer;
+}
+/*放大镜开始*/
+/*中图*/
+div.md{
+    position: relative;
+}
+/*Mask*/
+div.mask{
+    width:300px;
+    height:300px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#ffa;
+    opacity: 0.5;
+    display: none;
+}
+/*superMask*/
+div.superMask{
+    width:600px;
+    height:600px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*大图区域*/
+div.lgImg{
+    position:absolute;
+    margin:0;
+    width:450px;
+    height:450px;
+    top:0px;
+    left:600px;
+    display: none;
+    z-index:1;
+    background-image:url("../img/product01.png");
+    background-size:900px 900px;
+}
+/*放大镜结束*/
+
+/*设置详情页数量输入框 +-按钮样式*/
+li.input_num{
+    position: relative;
+}
+.my_input{
+    width:5.8rem;
+    height:2.5rem;
+    outline: 0;
+    border:1px solid #E4E7ED;
+}
+.my_btn{
+    width:20px;
+    height:20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border:1px solid #E4E7ED;
+    background: #fff;
+}
+.up{
+    position: absolute;
+    top:0px;
+    left:105px;
+    border-right: 0;
+}
+.down{
+    position: absolute;
+    top:20px;
+    left:105px;
+    border-right: 0;
+}
+/*右侧商品详情信息*/
+div.detailsInfo>ul li{
+    margin-bottom:5px;
+}
+/*加入购物车*/
+span.addCart>a{
+    border-radius:20px;
+    width:8rem;
+
+}
+/*加入购物车悬停样式*/
+span.addCart>a:hover{
+    width:9rem;
+    background: #f1f1ff;
+    border: 1px solid #ff1a45;
+    color:#ff1a45 !important;
+    transition:all .2s linear;
+}
+/*描述详情评论样式*/
+ul.tab{
+    display:flex;
+    flex-direction: row;
+}
+ul.tab li{
+    text-align: center;
+    font-size:1.5rem;
+    color: #f1f3f5;
+    justify-content: space-between;
+    margin-right:8px;
+    padding:2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #9a9d9f;
+}
+ul.tab li:hover{
+    background-color:#eee;
+    color: #eac52b;
+}
+ul.tab:first-child{
+    padding-left:5px;
+}
+/*设置描述详情评论内容样式*/
+div.content{
+    position: relative;
+    height:500px;
+}
+.content1,.content2,.content3{
+    width: 100%;
+    height:500px;
+    padding:30px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display:none;
+}

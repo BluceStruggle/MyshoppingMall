@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Title</title>
+</head>
+<body>
+<!-- 引入头部 -->
+<header id="header">
+
+</header>
+    <div class="my_container">
+        <!-- 主体商品页 -->
+        <!-- 导航 主页/所有分类/配件/耳机(xxx条结果) -->
+                    <ul class="breadcrumb pt-4 pb-4 my_bread_bd ">
+                        <li class="breadcrumb-item"><a href="#" class="text-muted small">主页</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-muted small">所有分类</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-muted small">配件</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-dark small">耳机(233条结果)</a></li>
+                    </ul>
+        <!--商品页内容-->
+            <div class="row mt-5">
+                <!-- 左边分类 价格 品牌 热销 -->
+                <div class="col-xl-3">
+                    <div>
+                        <h5 class="mb-4 font-weight-bold">分类</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <input type="checkbox" class="" id="c1">
+                                <span><label for="c1">笔记本电脑</label></span>
+                            </li>
+                        <li class="mb-2">
+                            <input type="checkbox" class="" id="c2">
+                            <span><label for="c2">智能手机</label></span>
+                        </li>
+                        <li class="mb-2">
+                            <input type="checkbox" class="" id="c3">
+                            <span><label for="c3">相机</label></span>
+                        </li>
+                        <li class="mb-2">
+                            <input type="checkbox" class="" id="c4">
+                            <span><label for="c4" class="">配件</label></span>
+                        </li>
+                        </ul>
+                    </div>
+                    <h5 class="mb-4">价格</h5>
+                        <div class="d-flex flex-row mb-4">
+                        <!-- 最小价格 -->
+                            <div class="input_num">
+                                <input type="text" value="1.00" class="my_input_s">
+                                <span class="my_btn s_up">+</span>
+                                <span class="my_btn s_down">-</span>
+                            </div>
+                        <!-- 最大价格 -->
+                            <div class="input_num">
+                                -<input type="text" value="999.00" class="my_input_b">
+                                <span class="my_btn b_up">+</span>
+                                <span class="my_btn b_down">-</span>
+                            </div>
+                        </div>
+
+                    <h5 class="mb-4 font-weight-bold">品牌</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <input type="checkbox" id="b1">
+                            <span><label for="c1">三星</label></span>
+                        </li>
+                        <li class="mb-2">
+                            <input type="checkbox" id="b2">
+                            <span><label for="c2">索尼</label></span>
+                        </li>
+                        <li class="mb-2">
+                            <input type="checkbox" id="b3">
+                            <span><label for="c3">LG</label></span>
+                        </li>
+                        <li class="mb-2">
+                            <input type="checkbox" id="b4">
+                            <span><label for="c4">尼康</label></span>
+                        </li>
+                    </ul>
+                    <h5 class="mb-4 font-weight-bold">热销</h5>
+                    <div class="row mb-4">
+                        <div class="col-xl-4">
+                            <img src="img/product01.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-xl-8">
+                            <span>分类</span>
+                            <br>
+                                <a href="#" class="small text-dark font-weight-bold">产品名</a>
+                            <br>
+                            <span><b class="text-danger">$980.00</b><s class="text-muted">$990.00</s></span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-xl-4">
+                            <img src="img/product02.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-xl-8">
+                            <span>分类</span>
+                            <br>
+                            <a href="#" class="small text-dark font-weight-bold">产品名</a>
+                            <br>
+                            <span><b class="text-danger">$980.00</b><s class="text-muted">$990.00</s></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <img src="img/product03.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-xl-8">
+                            <span>分类</span>
+                            <br>
+                            <a href="#" class="small text-dark font-weight-bold">产品名</a>
+                            <br>
+                            <span><b class="text-danger">$980.00</b><s class="text-muted">$990.00</s></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右边商品 分页 -->
+                <div class="col-xl-9">
+                    <!-- 排序方式 下拉列表 每页显示多少条数据 -->
+                    <div class="mb-2">
+                    <span>
+                        排序方式:
+                            <select class="btn btn-light">
+                                <option>销量</option>
+                                <option>价格</option>
+                            </select>
+                        每页显示:
+                            <select class="btn btn-light">
+                                <option>9</option>
+                                <option>12</option>
+                            </select>
+                    </span>
+                    </div>
+                    <!-- 商品内容展示 -->
+                <div class="productList">
+                    <div class="row mb-4">
+
+                    </div>
+                </div>
+                    <!-- 底部 -->
+                    <!-- 数据记录数量汇总 -->
+                    <!-- 分页 -->
+                    <div class="row">
+                        <div class="col-xl-4 offset-8 ">
+                            <ul class="pagination">
+                                <li class="page-item disabled"><a href="#" class="page-link text-dark prevPage">上一页</a></li>
+
+                                <li class="page-item"><a href="#" class="page-link text-dark nextPage">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- 右侧固定的购物车导航 -->
+            <div class="fixedNav">
+                <!-- 个人中心 -->
+                    <div class="personInfo"><span>个人中心</span></div>
+                <!-- 购物车 -->
+                    <div class="myCart">
+                        <span>购物车</span>
+                        <div class="cartList">
+                            <ul class="list-unstyled">
+                                <li class="cartHead"><span>我的购物车</span></li>
+                                <li class="cartFoot">
+                                    <span>清空</span>
+                                    <span>结算</span>
+                                    <span>总价</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- 回到顶部 -->
+                    <div class="goUp">
+                        <div></div>
+                    </div>
+            </div>
+        </div>
+
+<!-- 引入底部 -->
+<footer>
+    <iframe src="footer.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>

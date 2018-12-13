@@ -1,0 +1,29 @@
+/*a标签悬停红色*/
+a:hover{
+    color:#eb0033;
+}
+/*a标签字体白色*/
+div ul li a{
+    color:white;
+}
+/*设置关于等 的背景颜色*/
+.my_fbg1{
+    background: #15161D;
+}
+/*设置版权等背景颜色*/
+.my_fbg2{
+    background: #1E1F29;
+}
+/*设置底部下边框样式*/
+.my_fb_top{
+    border-top:3px solid #eb0033;
+}
+/*设置底部关于我们信息分类服务字体*/
+.my_f_bfont{
+    font: bold 1.25rem  "微软雅黑";
+}
+/*设置缩小字体透明度样式*/
+.my_f_sfont{
+    font:normal 1rem "微软雅黑";
+    opacity:0.7;
+}

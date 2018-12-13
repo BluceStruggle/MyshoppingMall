@@ -1,0 +1,225 @@
+/*设置面包屑导航上下边框*/
+.my_bread_bd{
+    border-bottom:1px solid #c2c2c3;
+}
+/*复选框旁的文字样式*/
+input[type=checkbox]+span>label{
+    vertical-align: middle;
+    padding-bottom:5px;
+}
+/*设置左侧价格输入框 +-按钮样式*/
+div.input_num{
+    position: relative;
+}
+.my_input_s,.my_input_b{
+    width:5.8rem;
+    height:2.5rem;
+    outline: 0;
+    border:1px solid #E4E7ED;
+}
+.my_btn{
+    width:20px;
+    height:20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border:1px solid #E4E7ED;
+    background: #fff;
+}
+.s_up{
+    position: absolute;
+    top:0px;
+    left:70px;
+    border-right: 0;
+}
+.s_down{
+    position: absolute;
+    top:20px;
+    left:70px;
+    border-right: 0;
+}
+.b_up{
+    position: absolute;
+    top:0px;
+    left:78px;
+    border-right: 0;
+}
+.b_down{
+    position: absolute;
+    top:20px;
+    left:78px;
+    border-right: 0;
+}
+/*右侧商品内容展示 商品数量+ - 按钮 输入框*/
+button.myQtyBtn{
+    width:30px;
+    border:1px solid #ced2d6;
+    padding:2px;
+    border-radius:3px;
+    background: #fafcfe;
+    color: #808387;
+    cursor: pointer;
+}
+button.myQtyBtn:hover{
+    border:1px solid #ff1a45;
+}
+input.myQtyInput{
+    border:1px solid #ced2d6;
+    border-radius:3px;
+    text-align: center;
+    color: #808387;
+    padding:2px;
+}
+/*设置商品内容展示时每个商品的边框*/
+.my_pro_bd{
+    border:1px solid #d7d9dc;
+}
+/*设置商品悬停样式*/
+.my_pro_hv:hover{
+    border:2px solid #ff1a45;
+}
+/**/
+div.product{
+    position: relative;
+}
+/*加入购物车初始状态隐藏*/
+/*.cartHide{
+    background: #1E1F29;
+    height:0rem;
+    width:17.5rem;
+    margin:auto;
+    text-align: center;
+}*/
+/*悬停显示加入购物车*/
+div.cart{
+    margin-top:10px;
+}
+.cartShow{
+    background: #1E1F29;
+    height:4rem;
+    width:17.5rem;
+    margin:auto;
+    text-align: center;
+    transition:all .15s linear;
+}
+div.cart>a{
+        border-radius:20px;
+        width:11rem;
+}
+/*加入购物车悬停样式*/
+div.cart>a:hover{
+    width:13rem;
+    background: #f1f1ff;
+    border: 1px solid #ff1a45;
+    color:#ff1a45 !important;
+    transition:all .2s linear;
+}
+/*上一页 下一页*/
+ul.pagination .prevPage,ul.pagination .nextPage{
+        width:75px;
+}
+/*页码激活样式*/
+
+/*固定导航 个人中心 购物车 回到顶部*/
+div.fixedNav{
+    width:50px;
+    height:300px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:10;/*为了购物车列表不被bootstrap page-item样式覆盖*/
+}
+div.fixedNav .personInfo,.myCart,.goUp{
+    width:60px;
+    height:60px;
+    background-color: #1E1F29;
+    margin-bottom:2px;
+    cursor: pointer;
+}
+/*鼠标悬停效果*/
+div.personInfo span{
+    color: #fff;
+    font-size:12px;
+}
+div.myCart span{
+    color: #e1e1e1;
+    font-size:12px;
+}
+div.goUp{
+    position: relative;
+}
+div.goUp>div{
+    width:25px;
+    border:2px solid #c8d4e7;
+    border-right:0;
+    border-bottom:0;
+    height:25px;
+    position: absolute;
+    top:25px;
+    left:12px;
+    transform:rotate(45deg);
+    z-index: 1;
+}
+/*设置右侧固定导航 点击出现购物车样式*/
+div.myCart{
+    position: relative;
+}
+/*购物车*/
+div.myCart div.cartList{
+    width:300px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #1E1F29;
+    top:-240px;
+    left:-300px;
+    display: none;
+}
+/*右侧固定导航 购物车列表*/
+div.cartList ul li{
+    margin-left:5px;
+    margin-top: 5px;
+}
+
+div.cartList ul li input[type=text]{
+    width:20px;
+    border:0;
+    border-radius: 2px;
+    text-align: center;
+}
+/*+ - 按钮*/
+div.cartList ul li button{
+    width:20px;
+    border:1px solid #ced2d6;
+    border-radius:2px;
+    background: #fafcfe;
+    color: #808387;
+    cursor: pointer;
+}
+/*购物车li下边框*/
+div.cartList ul li:not(:last-child){
+    border-bottom:2px solid #b6b6b6;
+    padding-bottom:5px;
+}
+li.cartHead span{
+    font-size:20px;
+}
+/*购物车中li的标题样式*/
+span.title{
+    display: inline-block;
+    width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+/*购物车li尾部 清空 结算 总价*/
+li.cartFoot span{
+    box-shadow:2px 2px 1px #777e98;
+    background-color: #4c536a;
+    padding:8px;
+    border-radius: 4px;
+    margin-left:5px;
+}
+li.cartFoot span:last-child{
+    margin-left:80px;
+}
+

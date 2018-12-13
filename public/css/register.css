@@ -1,0 +1,49 @@
+/*登录边框*/
+div.loginBg{
+    background-image: url("../img/loginBg.jpg") ;
+    width:1520px;
+    height:700px;
+}
+
+div.my_container>div{
+    border:2px solid #8c8f93;
+    width:400px;
+    border-radius:5px;
+    padding:10px;
+    box-shadow:1px 2px 2px 2px #5f6163;
+    margin-bottom: 20px;
+    float:right;
+    margin-top:100px;
+}
+p{
+    font-family: "微软雅黑";
+    font-size:18px;
+    color: #45484c;
+    margin-bottom:5px;
+}
+
+hr{
+    color: #94979b;
+    margin-top:30px;
+}
+input[name=uname],input[name=upwd],input[name=cupwd],input[type=text]{
+    width:250px;
+    height:40px;
+    border-radius:3px;
+    border:2px solid #c8cbcf;
+}
+/**/
+p.unameMsg,p.upwdMsg,p.cupwdMsg,p.emailMsg,p.phoneMsg{
+    margin-top:30px;
+}
+button.register{
+    padding:10px;
+    width:80px;
+    border:2px solid #0060b1;
+    background: #2b90ff;
+    border-radius:5px;
+    color:#eee;
+}
+button.register:hover{
+    cursor: pointer;
+}
